@@ -49,25 +49,22 @@
           </div>
         </div>
       </div>
-      
-    </div>
-	
+      </div>
+	<hr>
+    <a href="http://raptr.com/nchakall?src=em_all"><img alt="Raptr Gamercard" src="http://raptr.com/badge/nchakall/fs_overall.png" style="border: none;"></a>
+    <br>
+    <footer>
+    <a href="https://www.facebook.com/pages/Gault-Tech/441424729273146?skip_nax_wizard=true"><img src="../assets/images/icon-facebook.png"/></a>
+    <p>&copy; Stephen Gault 2013</p>
+    </footer>
+    </hr>
+
 	  <script src="js/jquery-1.9.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>$(document).ready(function(){$('carousel').carousel()});</script>
     <% flash.each do |key, value| %>
     <%= content_tag(:div, value, :class => "flash #{key}") %>
     <% end %>
-   
-<%= yield %>
-<hr>
- <a href="http://raptr.com/nchakall?src=em_all"><img alt="Raptr Gamercard" src="http://raptr.com/badge/nchakall/fs_overall.png" style="border: none;"></a>
-          <br>
-        <footer>
-
-          <a href="https://www.facebook.com/pages/Gault-Tech/441424729273146?skip_nax_wizard=true"><img src="../assets/images/icon-facebook.png"/></a>
-          <p>&copy; Stephen Gault 2013</p>
-        </footer>
-      </hr>
+    <%= yield %>
 </body>
 </html>
